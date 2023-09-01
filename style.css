@@ -6,7 +6,8 @@ body {
   
   header {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 3px 50px ;
+    justify-content: center;
   }
   
   img {
@@ -20,8 +21,9 @@ body {
   }
   
   p {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    white-space: normal;
   }
   
   nav {
@@ -33,7 +35,7 @@ body {
   
   a {
     text-decoration: none;
-    color: #000;
+    color: rgba(20, 148, 199, 0.795);
   }
   
   a:hover {
@@ -41,7 +43,6 @@ body {
   }
   
   footer {
-    text-align: center;
     margin-top: 20px;
   }
   
@@ -49,9 +50,72 @@ body {
     header {
       padding: 10px;
     }
-  
+   
     img {
       max-width: 100%;
     }
+    #features {
+        flex-direction: column;
+      }
+    
+      article {
+        width: 100%;
+      }
   }
-  
+ #introduction-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #9c5725;
+  }
+  main section p{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 728px;
+  }
+
+  @media (min-width: 768px){
+    article {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+    #introduction-sec p{
+      font-family: madefor-display-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
+      font-size: 2.5rem;
+    }
+}
+
+article{
+    text-align: center;
+}
+#about{
+  text-align: center;
+
+}
+#p{
+  color: blue;
+}
+#e{
+  color: yellow;
+}
+#navigation{
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav div a{
+  margin: 0 5px;
+}
+#about p a{
+  color: blue;
+}
+
+ul{
+  display:flex;
+  justify-content: space-between;
+}
