@@ -80,7 +80,7 @@ body {
     min-width: 728px;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 769px){
     article {
         width: 33.33%;
         margin-bottom: 20px;
