@@ -44,13 +44,16 @@ body {
   
   footer {
     margin-top: 20px;
+    margin-bottom: 30px;
   }
   
   @media (max-width: 768px) {
     header {
       padding: 10px;
     }
-   
+    article{
+      width: 100%;
+    }
     img {
       max-width: 100%;
     }
@@ -61,6 +64,14 @@ body {
       article {
         width: 100%;
       }
+    footer ul li{
+      display: inline-block;
+      justify-content: space-between;      
+    }
+    footer ul{
+      display:inline-block;
+      justify-content: space-evenly;
+    }
   }
  #introduction-sec{
     display: flex;
@@ -73,17 +84,17 @@ body {
     margin-bottom: 30px;
     text-align: center;
   }
-  #features {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 728px;
-  }
 
   @media (min-width: 775px){
     article {
         width: 33.33%;
         margin-bottom: 20px;
+    }
+    #features {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 728px;
     }
     #introduction-sec p{
       font-family: madefor-display-bold, helveticaneuew01-65medi, helveticaneuew02-65medi, helveticaneuew10-65medi, sans-serif;
