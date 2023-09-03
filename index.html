@@ -1,57 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>EmployEase</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>EmployEase</title>
 </head>
 <body>
-  <header>
     <nav>
-      <p><span id="p">E</span><span id="e">E</span></p>
-      <div id="navigation">
-        <a href="#about">About</a>
-        <a href="#introduction-sec">Who we are</a>
-        <a href="#features">Features</a>
-      </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><span style="color: blue;">Employ</span><span style="color: yellow;">Ease</span></label>
+        <ul class="menu-item">
+            <li><a href="#Home" class="active, dis">Home</a></li>
+            <li><a href="#features" class=", dis">Feature</a></li>
+            <li><a href="#about" class=", dis">About</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <section id="introduction-sec">
-            <img id="land-pic" src="./images/intro-pic.png">
-            <h1 id="project-name"><span style="color: blue;">Employ</span><span style="color: yellow;">Ease</span></em></h1>
-            <p>Streamline your job search and find the perfect candidate effortlessly with our innovative jobseeker and employer connector app</p>
-    </section>
-    <section id="features">
-      <article>
-        <img src="./images/skill-assessments.jpg" alt="Skill Assessments">
-        <h3>Skill Assessments</h3>
-        <p>Offer skill assessment tests or quizzes for jobseekers, helping employers evaluate candidates more effectively.</p>
-      </article>
-      <article>
-        <img src="./images/messaging-system.jpg" alt="Messaging System">
-        <h3>Messaging System</h3>
-        <p>Implement a secure in-app messaging system to facilitate communication between jobseekers and employers</p>
-      </article>
-      <article>
-        <img src="./images/resumeCV-upload.jpg" alt="Resume/CV Upload">
-        <h3>Resume/CV Upload</h3>
-        <p>Enable jobseekers to upload and manage their resumes or CVs and allow employers to access and review them</p>
-      </article>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>Empowering Africa's Workforce: Our mission is to bridge the gap in employment opportunities by focusing on what matters most - local jobs within Africa.</p>
-      <p>While other platforms predominantly offer international positions, we are dedicated to bringing local jobseekers and employers closer together, fostering growth, and advancing careers right here at home. Join us in reshaping the future of African employment</p>
-      <p>The project is currently live at <a href="https://codelordgh.github.io/">here</a>. I hope you enjoy it!</p>
-    </section>
-    
-  </main>
-  <footer>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/mawuena-kossi-baboh">Mawuena Kossi BABOH</a></li>
-      <li><a href="https://github.com/CodeLordGh">CodeLordGh</a></li>
-      <li><a href="https://codelordgh.github.io/">Deployed Project Application</a></li>
-    </ul>
-  </footer>
+    <main>
+        <section id="Home" style="background-image: url('./images/intro-pic.png'); background-repeat: no-repeat; background-size:contain; justify-self: center; background-position: center;">
+           <!-- <img id="land-pic" src="./images/intro-pic.png">
+            <h1 id="project-name"><span style="color: blue;">Employ</span><span style="color: yellow;">Ease</span></em></h1> -->
+            <div id="introd">
+                <p style="font-family: 'Varela Round';" id="Intro">Streamline your job search and find the perfect candidate effortlessly with our innovative jobseeker and employer connector app</p>
+            </div>
+        </section>
+        <section id="features">
+            <article>
+              <img src="./images/skill-assessments.jpg" alt="Skill Assessments">
+              <h3>Skill Assessments</h3>
+              <p>Offer skill assessment tests or quizzes for jobseekers, helping employers evaluate candidates more effectively.</p>
+            </article>
+            <article>
+              <img src="./images/messaging-system.jpg" alt="Messaging System">
+              <h3>Messaging System</h3>
+              <p>Implement a secure in-app messaging system to facilitate communication between jobseekers and employers</p>
+            </article>
+            <article>
+              <img src="./images/resumeCV-upload.jpg" alt="Resume/CV Upload">
+              <h3>Resume/CV Upload</h3>
+              <p>Enable jobseekers to upload and manage their resumes or CVs and allow employers to access and review them</p>
+            </article>
+          </section>
+          <section id="about">
+            <h2>About</h2>
+            <p>Empowering Africa's Workforce: Our mission is to bridge the gap in employment opportunities by focusing on what matters most - local jobs within Africa.</p>
+            <p>While other platforms predominantly offer international positions, we are dedicated to bringing local jobseekers and employers closer together, fostering growth, and advancing careers right here at home. Join us in reshaping the future of African employment</p>
+            <p>The project is currently live at <a href="https://codelordgh.github.io/">here</a>. I hope you enjoy it!</p>
+          </section>
+          <footer>
+            <ul>
+              <li>
+                <div>
+                    <i class="fab fa-linkedin" style="font-size:30px;color:#2196F3"></i>
+                    <a href="https://www.linkedin.com/in/mawuena-kossi-baboh">Mawuena Kossi BABOH</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                    <i class="fab fa-github" style="font-size: 30px; color: #2196F3;"></i>
+                    <a href="https://github.com/CodeLordGh">CodeLordGh</a>
+                </div>
+              </li>
+              <li><a href="https://codelordgh.github.io/">Deployed Project Application</a></li>
+            </ul>
+          </footer>
+    </main>
 </body>
 </html>
