@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EmployEase</title>
-</head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"><span style="color: blue;">Employ</span><span style="color: yellow;">Ease</span></label>
-        <ul class="menu-item">
-            <li><a href="#Home" class="active, dis">Home</a></li>
-            <li><a href="#features" class=", dis">Feature</a></li>
-            <li><a href="#about" class=", dis">About</a></li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <section id="Home" style="background-image: url('./images/intro-pic.png'); background-repeat: no-repeat; background-size:contain; justify-self: center; background-position: center;">
-           <!-- <img id="land-pic" src="./images/intro-pic.png">
-            <h1 id="project-name"><span style="color: blue;">Employ</span><span style="color: yellow;">Ease</span></em></h1> -->
-            <div id="introd">
-                <p style="font-family: 'Varela Round';" id="Intro">Streamline your job search and find the perfect candidate effortlessly with our innovative jobseeker and employer connector app</p>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" />
+              <h3>Danvo in a new branch</h3>
             </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feactures</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="btn">Sign up</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <section class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Future is here,</h1>
+                <h1>Start Exploring now.</h1>
+              </div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus eius distinctio odit, magni magnam qui ex perferendis
+                vitae!
+              </p>
+              <div class="cta">
+                <a href="#" class="btn">Get started</a>
+              </div>
+           </div>
+
+            <div class="right">
+              <img src="./img/person.png" alt="Person Image" class="person" />
+            </div>
+          </div>
         </section>
-        <section id="features">
-            <article>
-              <img src="./images/skill-assessments.jpg" alt="Skill Assessments">
-              <h3>Skill Assessments</h3>
-              <p>Offer skill assessment tests or quizzes for jobseekers, helping employers evaluate candidates more effectively.</p>
-            </article>
-            <article>
-              <img src="./images/messaging-system.jpg" alt="Messaging System">
-              <h3>Messaging System</h3>
-              <p>Implement a secure in-app messaging system to facilitate communication between jobseekers and employers</p>
-            </article>
-            <article>
-              <img src="./images/resumeCV-upload.jpg" alt="Resume/CV Upload">
-              <h3>Resume/CV Upload</h3>
-              <p>Enable jobseekers to upload and manage their resumes or CVs and allow employers to access and review them</p>
-            </article>
-          </section>
-          <section id="about">
-            <h2>About</h2>
-            <p>Empowering Africa's Workforce: Our mission is to bridge the gap in employment opportunities by focusing on what matters most - local jobs within Africa.</p>
-            <p>While other platforms predominantly offer international positions, we are dedicated to bringing local jobseekers and employers closer together, fostering growth, and advancing careers right here at home. Join us in reshaping the future of African employment</p>
-            <p>The project is currently live at <a href="https://codelordgh.github.io/">here</a>. I hope you enjoy it!</p>
-          </section>
-          <footer>
-            <ul>
-              <li>
+        <section class="showcase-area">
+            <article class="container hidden">
+                <img src="./img/skill-assessments.jpg" alt="Skill Assessments">
                 <div>
-                    <i class="fab fa-linkedin" style="font-size:30px;color:#2196F3"></i>
-                    <a href="https://www.linkedin.com/in/mawuena-kossi-baboh">Mawuena Kossi BABOH</a>
+                    <h3>Skill Assessments</h3>
+                    <p>Offer skill assessment tests or quizzes for jobseekers, helping employers evaluate candidates more effectively.</p>
                 </div>
-              </li>
-              <li>
+            </article>
+              <article class="container hidden">
+                <img src="./img/messaging-system.jpg" alt="Messaging System">
                 <div>
-                    <i class="fab fa-github" style="font-size: 30px; color: #2196F3;"></i>
-                    <a href="https://github.com/CodeLordGh">CodeLordGh</a>
+                    <h3>Messaging System</h3>
+                    <p>Implement a secure in-app messaging system to facilitate communication between jobseekers and employers</p>
                 </div>
-              </li>
-              <li><a href="https://codelordgh.github.io/">Deployed Project Application</a></li>
-            </ul>
-          </footer>
+              </article>
+              <article class="container hidden">
+                <img src="./img/resumeCV-upload.jpg" alt="Resume/CV Upload">
+                <div>
+                    <h3>Resume/CV Upload</h3>
+                    <p>Enable jobseekers to upload and manage their resumes or CVs and allow employers to access and review them</p>
+                </div>
+              </article>
+        </section>
+
+        <footer class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </footer>
+      </div>
     </main>
-</body>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
