@@ -270,6 +270,9 @@ header .container {
   z-index: 100;
   animation: appear 1s 1 both;
 }
+footer div ul {
+  list-style: none;
+}
 
 @keyframes appear {
   0% {
@@ -425,4 +428,31 @@ header .container {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+.showcase-area article{
+  margin-bottom: 5rem;
+}
+.article-contain {
+  max-width: 81rem ;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article-img{
+  max-width: 95%;
+  margin-right: 4rem;
+}
+.article-div {
+  text-align: center;
+}
+.footer-container{
+  max-width: 81rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  z-index: 10;
+}
+.bottom-area{
+  margin-top: 3rem;
 }
